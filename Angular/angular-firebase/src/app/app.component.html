@@ -1,0 +1,29 @@
+<!-- <form #loginForm="ngForm" (ngSubmit)="addData(loginForm.value)">
+  <div class="main">
+    <div class="input-fields">
+      <input name="name" ngModel placeholder="Name" id="name" type="text" class="input-field" />
+    </div>
+    <div class="input-fields">
+      <input name="email" ngModel placeholder="Email" id="email" type="email" class="input-field" />
+    </div>
+    <div class="input-fields">
+      <input name="password" ngModel placeholder="Password" id="password" type="password" class="input-field" />
+    </div>
+    <button>Add Data </button>
+  </div>
+</form> -->
+
+<ul>
+  <li *ngFor="let item of data">
+    {{ item.email }}
+    {{ item.name }}
+    {{ item.password }}
+    <button (click)="updateData(item.id)">
+      Update
+    </button>
+
+    <button (click)="deleteData(item.id)">
+      Delete
+    </button>
+  </li>
+</ul>
