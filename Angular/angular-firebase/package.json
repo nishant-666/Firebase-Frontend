@@ -22,7 +22,7 @@
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4",
-    "firebase": "^9.4.0",
+    "firebase": "^9.8.0",
     "rxfire": "^6.0.0"
   },
   "devDependencies": {
